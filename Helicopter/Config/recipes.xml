@@ -1,0 +1,36 @@
+<configs>
+	<insertAfter xpath="//recipe[@name='vehicleGyrocopterPlaceable']">
+		
+		<recipe name="vehicleHelicopterChassis" count="1" craft_area="workbench" craft_time="300" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="355"/>
+			<ingredient name="resourceMechanicalParts" count="65"/>
+			<ingredient name="resourceDuctTape" count="40"/>
+			<ingredient name="resourceLeather" count="120"/>
+			<ingredient name="resourceElectricParts" count="80"/>
+		</recipe>
+		
+		<recipe name="vehicleHelicopterRotor" count="1" craft_area="workbench" craft_time="300" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="60"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceSpring" count="12"/>
+			<ingredient name="resourceGlue" count="40"/>	
+		</recipe>
+		
+		<recipe name="bigEngine" count="1" craft_area="workbench" craft_time="360" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="90"/>
+			<ingredient name="resourceMechanicalParts" count="148"/>
+			<ingredient name="resourceSpring" count="20"/>
+			<ingredient name="resourceMetalPipe" count="15"/>
+			<ingredient name="smallEngine" count="3"/>
+		</recipe>
+		
+		<recipe name="vehicleHelicopterPlaceable" count="1" craft_area="workbench" craft_time="600">
+			<ingredient name="vehicleHelicopterChassis" count="1"/>
+			<ingredient name="vehicleHelicopterRotor" count="1"/>
+			<ingredient name="vehicleGyroCopterAccessories" count="1"/>
+			<ingredient name="bigEngine" count="1"/>
+			<ingredient name="carBattery" count="2"/>
+		</recipe>
+	</insertAfter>
+ </configs>

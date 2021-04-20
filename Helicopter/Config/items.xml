@@ -1,0 +1,99 @@
+<configs>
+	<insertAfter xpath="//item[@name='smallEngine']">
+		
+		<item name="bigEngine">
+			<property name="DescriptionKey" value="bigEngineDesc"/>
+			<property name="CustomIcon" value="bigEngine"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="Weight" value="200"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Group" value="Resources"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+		</item>
+		
+	</insertAfter>
+		
+	<insertAfter xpath="//item[@name='vehicleGyroCopterAccessoriesSchematic']">
+	    
+		<item name="vehicleHelicopterChassisSchematic">
+	        <property name="Extends" value="schematicNoQualityMaster"/>
+	        <property name="CreativeMode" value="Player"/>
+	        <property name="CustomIcon" value="vehicleHelicopterChassis"/>
+	        <property name="Unlocks" value="vehicleHelicopterChassis"/>
+	        <effect_group tiered="false">
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHelicopterChassis" operation="set" value="1"/>
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	        </effect_group>
+        </item>
+		
+		</insertAfter>
+		
+	<insertAfter xpath="//item[@name='vehicleHelicopterChassisSchematic']">	
+		
+		<item name="vehicleHelicopterRotorSchematic">
+	        <property name="Extends" value="schematicNoQualityMaster"/>
+	        <property name="CreativeMode" value="Player"/>
+	        <property name="CustomIcon" value="vehicleHelicopterRotor"/>
+	        <property name="Unlocks" value="vehicleHelicopterRotor"/>
+	        <effect_group tiered="false">
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHelicopterRotor" operation="set" value="1"/>
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	        </effect_group>
+        </item>
+		
+	</insertAfter>
+		
+	<insertAfter xpath="//item[@name='vehicleGyrocopterPlaceable']">
+		
+		<item name="vehicleHelicopterChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="DescriptionKey" value="vehicleHelicopterChassisDesc"/>
+			<property name="CustomIcon" value="vehicleHelicopterChassis"/>
+			<property name="EconomicValue" value="20000"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleHelicopterChassisSchematic"/>
+		</item>
+		
+	</insertAfter>	
+		
+	<insertAfter xpath="//item[@name='vehicleHelicopterChassis']">	
+		
+		<item name="vehicleHelicopterRotor">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="DescriptionKey" value="vehicleHelicopterRotorDesc"/>
+			<property name="CustomIcon" value="vehicleHelicopterRotor"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="UnlockedBy" value="perkGreaseMonkey,vehicleHelicopterRotorSchematic"/>
+		</item>
+		
+	</insertAfter>	
+		
+	<insertAfter xpath="//item[@name='vehicleHelicopterRotor']">	
+		
+		<item name="vehicleHelicopterPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicleHelicopterPlaceable"/>
+			<property name="DescriptionKey" value="vehicleHelicopterDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/manux_HelicopterOH58.unity3d?HelicopterOH58Prefab_A17.prefab"/>
+			<property name="EconomicValue" value="220000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHelicopter"/>
+				<property name="VehicleSize" value="4, 4, 13"/>
+			</property>
+			<effect_group name="vehicleHelicopterPlaceable" tiered="false">
+			    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="4500"/>
+			</effect_group>
+		</item>
+		
+	</insertAfter>
+ </configs>

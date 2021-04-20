@@ -1,0 +1,16 @@
+<configs>
+	<insertBefore xpath="//trader_item_group/item[@name='smallEngine']">
+			<item name="bigEngine"/>
+	</insertBefore>
+	
+	<append xpath="//trader_item_group[@name='vehicleParts']">
+			<item name="vehicleHelicopterChassis"/>
+			<item name="vehicleHelicopterRotor"/>
+			<item name="vehicleHelicopterPlaceable"/>
+	</append>
+	
+	<append xpath="//trader_item_group[@name='rareBooks']">
+			<item name="vehicleHelicopterChassisSchematic"/>
+			<item name="vehicleHelicopterRotorSchematic"/>
+	</append>
+</configs>

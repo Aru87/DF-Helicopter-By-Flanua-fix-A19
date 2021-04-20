@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Helicopter" />
+		<Description value="An modlet that will integrate and add a flying helicopter for Alpha 18.4." />
+		<Author value="Flanua" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

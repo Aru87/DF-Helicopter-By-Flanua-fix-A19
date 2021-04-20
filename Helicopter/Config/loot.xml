@@ -1,0 +1,40 @@
+<configs>
+	<!--
+	<insertBefore xpath="//lootgroup[@name='vehicleParts']">
+	
+		<lootgroup name="helicopterParts">
+			<item name="vehicleHelicopterChassis"/>
+			<item name="vehicleGyroCopterAccessories"/>
+			<item name="vehicleHelicopterRotor"/>
+			<item name="bigEngine"/>
+			<item name="carBattery"/>
+		</lootgroup>
+		
+	</insertBefore>
+	
+	<append xpath="//lootgroup[@name='rareAutomotive']">
+			<item name="bigEngine"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='schematicsVehiclesRare']">
+			<item name="vehicleHelicopterChassisSchematic"/>
+			<item name="vehicleHelicopterRotorSchematic"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='vehicleParts']">
+		<item group="helicopterParts" loot_prob_template="probTemplate0.4"/>
+	</append>
+	
+	<append xpath="//lootcontainer[@id='34']">
+		<item group="helicopterParts" prob="0.1"/>
+	</append>
+	-->
+	<insertBefore xpath="//lootcontainer[@id='1023']">
+	
+	<!-- vehicleHelicopter storage-->
+    <lootcontainer id="146" count="0" size="9,8" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+    </lootcontainer>
+	
+    </insertBefore>
+	
+ </configs>

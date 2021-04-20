@@ -1,0 +1,10 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+bigEngine,items,Part,EnChanged,Big Engine,,,,,
+bigEngineDesc,items,Part,EnChanged,A bigger and more powerful engine for special vehicles.,,,,,
+vehicleHelicopterChassisSchematic,vehicles,item,EnChanged,Helicopter Chassis Schematic,,,,,
+vehicleHelicopterRotorSchematic,vehicles,item,EnChanged,Helicopter Rotor Schematic,,,,,
+vehicleHelicopterChassis,vehicles,item,EnChanged,Helicopter Chassis,,,,,
+vehicleHelicopterChassisDesc,vehicles,item,EnChanged,A part used for crafting a vehicle.,,,,,
+vehicleHelicopterRotor,vehicles,item,EnChanged,Helicopter Rotor,,,,,
+vehicleHelicopterRotorDesc,vehicles,item,EnChanged,A part used for crafting a vehicle.,,,,,
+vehicleHelicopterDesc,vehicles,vehicle,EnChanged,This vehicle can be placed into the world like a block using the secondary action.\n\nRequires a workbench to craft.,,,,,
